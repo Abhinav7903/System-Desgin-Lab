@@ -2,6 +2,8 @@
 
 An interactive **system design simulator and learning lab** that runs fully in the browser. Drag components onto a canvas, connect them, run simulated traffic, inject failures, and learn from post-mortems.
 
+> **⚠️ Work in Progress** — This project is being built slowly and iteratively. Features are being added piece by piece as I learn. Things may break, change, or be incomplete. I'm committed to making this better over time — contributions and patience welcome!
+
 ## Features
 
 ### 🎯 Core Simulation Engine
@@ -172,4 +174,4 @@ npm run typecheck
 
 ## License
 
-MIT License - see LICENSE file for details.
+[MIT License](LICENSE) — see [LICENSE](LICENSE) file for details.

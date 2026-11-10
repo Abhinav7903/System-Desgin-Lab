@@ -1,0 +1,84 @@
+@import '@xyflow/react/dist/style.css';
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #080b11;
+  color: #e2e8f0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* Live traffic: when the sim is running, edges flow. */
+.flow-playing .react-flow__edge.edge-live .react-flow__edge-path {
+  stroke: #38bdf8;
+  stroke-dasharray: 6 5;
+  animation: lab-dash 0.6s linear infinite;
+}
+
+@keyframes lab-dash {
+  from {
+    stroke-dashoffset: 11;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* React Flow chrome tuned to the dark lab palette. */
+.react-flow__controls {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.react-flow__controls button {
+  background: #0d121b;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  color: #94a3b8;
+}
+
+.react-flow__controls button:hover {
+  background: #141b28;
+}
+
+.react-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.react-flow__node {
+  font-family: inherit;
+}
+
+/* Thin scrollbars for panels. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 3px;
+}
